@@ -20,6 +20,7 @@ declare module HawtioMainNav {
 
     interface BuilderFactory {
         create(): NavItemBuilder;
+        join(...paths:string[]):string;
         configureRouting($routeProvider: ng.route.IRouteProvider, tab: NavItem): any;
     }
 
