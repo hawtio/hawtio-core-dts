@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.2
+* Add lodash.d.ts
+
 #### 2.0.1
 * Add missing join method on NavItemBuilder interface
 
