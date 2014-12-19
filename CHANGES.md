@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.3
+* Add perspective interfaces
+
 #### 2.0.2
 * Add lodash.d.ts
 
