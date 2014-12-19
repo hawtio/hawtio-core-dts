@@ -66,3 +66,43 @@ declare module HawtioMainNav {
     var createBuilder: ICreateBuilder;
 
 }
+
+declare module HawtioPerspective {
+
+  interface Selector {
+    content?: string;
+    id?: string;
+    href?: string;
+    title?: string;
+    onCondition?: () => boolean;
+  }
+
+  interface TabMap {
+    includes: Array<Selector>;
+    excludes: Array<Selector>;
+  }
+
+  interface PerspectiveLabel {
+    id: string;
+    label: string;
+    icon: any;
+  }
+
+  interface Perspective {
+    label: string;
+    icon: any;
+    lastPage: string;
+    isValid: () => boolean;
+    tabs: TabMap;
+
+  }
+
+  interface Registry {
+    add(id:string, perspective:Perspective):void;
+    remove(id:string):Perspective;
+    setCurrent(id:string):void;
+    getCurrent():Perspective;
+    getLabels():PerspectiveLabel[]
+  }
+
+}
