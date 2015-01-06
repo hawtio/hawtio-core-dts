@@ -4,8 +4,8 @@
 /// <reference path="angular-resource.d.ts"/>
 /// <reference path="angular-route.d.ts"/>
 
-/// <reference path="lodash.d.ts"/>
 /// <reference path="underscore.string.d.ts"/>
+/// <reference path="lodash.d.ts"/>
 
 declare module _ {
   interface LoDashStatic {
@@ -16,3 +16,5 @@ declare module _ {
 
 /// <reference path="hawtio-core.d.ts"/>
 /// <reference path="hawtio-core-navigation.d.ts"/>
+
+/// <reference path="jolokia.d.ts"/>
