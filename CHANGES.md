@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.5
+* Add jolokia d.ts
+
 #### 2.0.4
 * Add underscore.string interfaces and defs.d.ts so other packages can just include one file, also add _.str variable
 
