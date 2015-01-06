@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.6
+* Back out underscore.string and use sugarjs instead
+
 #### 2.0.5
 * Add jolokia d.ts
 
