@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.7
+* Add toastr, URI.js and dynatree defs
+
 #### 2.0.6
 * Back out underscore.string and use sugarjs instead
 
