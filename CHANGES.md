@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.8
+* Add CodeMirror defs
+
 #### 2.0.7
 * Add toastr, URI.js and dynatree defs
 
