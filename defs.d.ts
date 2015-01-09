@@ -9,6 +9,8 @@
 /// <reference path="sugar.d.ts"/>
 /// <reference path="jolokia.d.ts"/>
 /// <reference path="URI.d.ts"/>
+/// <reference path="codemirror.d.ts"/>
+/// <reference path="codemirror-additional.d.ts"/>
 
 /// <reference path="hawtio-core.d.ts"/>
 /// <reference path="hawtio-core-navigation.d.ts"/>
