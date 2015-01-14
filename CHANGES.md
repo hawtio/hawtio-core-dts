@@ -1,5 +1,8 @@
 ### Change Log
 
+#### 2.0.9
+* Add dagre, jsplumb, gridster, marked and zeroclipboard
+
 #### 2.0.8
 * Add CodeMirror defs
 

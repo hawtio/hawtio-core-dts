@@ -56,6 +56,11 @@ declare module HawtioCore {
      * This plugin's name and angular module
      */
     var pluginName: string;
+    /**
+     * Dummy local storage object
+     */
+    var dummyLocalStorage:WindowLocalStorage;
+
 }
 
 

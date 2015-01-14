@@ -11,6 +11,11 @@
 /// <reference path="URI.d.ts"/>
 /// <reference path="codemirror.d.ts"/>
 /// <reference path="codemirror-additional.d.ts"/>
+/// <reference path="dagre.d.ts"/>
+/// <reference path="jsPlumb.d.ts"/>
+/// <reference path="gridster.d.ts"/>
+/// <reference path="marked.d.ts"/>
+/// <reference path="zeroclipboard.d.ts"/>
 
 /// <reference path="hawtio-core.d.ts"/>
 /// <reference path="hawtio-core-navigation.d.ts"/>
