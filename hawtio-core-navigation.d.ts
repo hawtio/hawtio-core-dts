@@ -33,6 +33,7 @@ declare module HawtioMainNav {
         href?: () => string;
         click?: ($event: any) => void;
         isValid?: () => boolean;
+        show?: () => boolean;
         isSelected?: () => boolean;
         template?: () => string;
         tabs?: NavItem[];
