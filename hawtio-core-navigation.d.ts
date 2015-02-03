@@ -48,6 +48,7 @@ declare module HawtioMainNav {
         href(href: () => string): NavItemBuilder;
         click(click: ($event: any) => void): NavItemBuilder;
         isValid(isValid: () => boolean): NavItemBuilder;
+        show(show: () => boolean): NavItemBuilder;
         isSelected(isSelected: () => boolean): NavItemBuilder;
         template(template: () => string): NavItemBuilder;
         tabs(item: NavItem, ...items: NavItem[]): NavItemBuilder;
