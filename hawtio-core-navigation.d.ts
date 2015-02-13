@@ -9,6 +9,7 @@ declare module HawtioMainNav {
         CHANGED: string;
     }
     var Actions: IActions;
+
     interface Registry {
         builder(): NavItemBuilder;
         add(item: NavItem, ...items: NavItem[]): any;
@@ -16,6 +17,16 @@ declare module HawtioMainNav {
         iterate(iterator: (item: NavItem) => void): any;
         on(action: string, key: string, fn: (item: any) => void): void;
         selected(): NavItem;
+    }
+
+    interface WelcomePage {
+      rank: number;
+      isValid?: () => boolean;
+      href: () => string;
+    }
+
+    interface WelcomePageRegistry {
+      pages: Array<WelcomePage>;
     }
 
     interface BuilderFactory {
