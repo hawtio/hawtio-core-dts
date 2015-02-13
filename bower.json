@@ -1,6 +1,6 @@
 {
   "name": "hawtio-core-dts",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Collection of d.ts files for hawtio plugins written with typescript",
   "keywords": [
     "hawtio",
