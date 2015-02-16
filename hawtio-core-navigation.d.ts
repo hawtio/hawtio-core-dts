@@ -19,6 +19,12 @@ declare module HawtioMainNav {
         selected(): NavItem;
     }
 
+    interface DefaultPageRanking {
+      rank: number;
+      isValid: (yes: () => void, no: () => void) => void;
+    }
+
+    /* These are gonna get deprecated */
     interface WelcomePage {
       rank: number;
       isValid?: () => boolean;
@@ -28,6 +34,7 @@ declare module HawtioMainNav {
     interface WelcomePageRegistry {
       pages: Array<WelcomePage>;
     }
+    /* End These are gonna get deprecated */
 
     interface BuilderFactory {
         create(): NavItemBuilder;
@@ -48,10 +55,12 @@ declare module HawtioMainNav {
         isSelected?: () => boolean;
         template?: () => string;
         tabs?: NavItem[];
+        defaultPage?: DefaultPageRanking;
     }
 
     interface NavItemBuilder {
         id(id: string): NavItemBuilder;
+        defaultPage(defaultPage: DefaultPageRanking): NavItemBuilder;
         reload(reload: boolean): NavItemBuilder;
         page(page: () => string): NavItemBuilder;
         title(title: () => string): NavItemBuilder;
