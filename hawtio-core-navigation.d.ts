@@ -44,6 +44,7 @@ declare module HawtioMainNav {
 
     interface NavItem {
         id: string;
+        rank?: number;
         page?: () => string;
         reload?: boolean;
         context?: boolean;
@@ -61,6 +62,7 @@ declare module HawtioMainNav {
     interface NavItemBuilder {
         id(id: string): NavItemBuilder;
         defaultPage(defaultPage: DefaultPageRanking): NavItemBuilder;
+        rank(rank: number): NavItemBuilder;
         reload(reload: boolean): NavItemBuilder;
         page(page: () => string): NavItemBuilder;
         title(title: () => string): NavItemBuilder;
@@ -72,7 +74,7 @@ declare module HawtioMainNav {
         isSelected(isSelected: () => boolean): NavItemBuilder;
         template(template: () => string): NavItemBuilder;
         tabs(item: NavItem, ...items: NavItem[]): NavItemBuilder;
-        subPath(title: string, path: string, page?: string, reload?: boolean, isValid?: () => boolean): NavItemBuilder;
+        subPath(title: string, path: string, page?: string, rank?: number, reload?: boolean, isValid?: () => boolean): NavItemBuilder;
         build(): NavItem;
     }
 
