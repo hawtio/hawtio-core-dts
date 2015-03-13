@@ -9,7 +9,7 @@ declare module Hawtio {
      * Register a function to be executed after scripts are loaded but
      * before the app is bootstrapped
      */
-    registerPreBootstrapTask(task:(next:() => void) => void);
+    registerPreBootstrapTask(task:(next:() => void) => void, front?:boolean);
 
     /**
      * Add an angular module to the list of modules to bootstrap
