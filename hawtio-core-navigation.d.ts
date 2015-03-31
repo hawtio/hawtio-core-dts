@@ -42,6 +42,10 @@ declare module HawtioMainNav {
         configureRouting($routeProvider: ng.route.IRouteProvider, tab: NavItem): any;
     }
 
+    interface AttributeMap {
+      [name:string]: string;
+    }
+
     interface NavItem {
         id: string;
         rank?: number;
@@ -57,6 +61,8 @@ declare module HawtioMainNav {
         template?: () => string;
         tabs?: NavItem[];
         defaultPage?: DefaultPageRanking;
+        attributes?: AttributeMap;
+        linkAttributes?: AttributeMap;
     }
 
     interface NavItemBuilder {
@@ -67,6 +73,8 @@ declare module HawtioMainNav {
         page(page: () => string): NavItemBuilder;
         title(title: () => string): NavItemBuilder;
         context(context: boolean): NavItemBuilder;
+        attributes(attributes:AttributeMap): NavItemBuilder;
+        linkAttributes(attributes:AttributeMap): NavItemBuilder;
         href(href: () => string): NavItemBuilder;
         click(click: ($event: any) => void): NavItemBuilder;
         isValid(isValid: () => boolean): NavItemBuilder;
