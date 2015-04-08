@@ -53,6 +53,7 @@ declare module HawtioMainNav {
         reload?: boolean;
         context?: boolean;
         title?: () => string;
+        tooltip?: () => string;
         href?: () => string;
         click?: ($event: any) => void;
         isValid?: () => boolean;
@@ -72,6 +73,7 @@ declare module HawtioMainNav {
         reload(reload: boolean): NavItemBuilder;
         page(page: () => string): NavItemBuilder;
         title(title: () => string): NavItemBuilder;
+        tooltip(tooltip: () => string): NavItemBuilder;
         context(context: boolean): NavItemBuilder;
         attributes(attributes:AttributeMap): NavItemBuilder;
         linkAttributes(attributes:AttributeMap): NavItemBuilder;
