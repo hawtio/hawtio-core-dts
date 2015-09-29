@@ -64,6 +64,7 @@ declare module HawtioMainNav {
         defaultPage?: DefaultPageRanking;
         attributes?: AttributeMap;
         linkAttributes?: AttributeMap;
+        [name:string]: any;
     }
 
     interface NavItemBuilder {
