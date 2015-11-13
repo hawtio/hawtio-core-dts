@@ -68,6 +68,10 @@ declare module HawtioCore {
      * Dummy local storage object
      */
     var dummyLocalStorage:WindowLocalStorage;
+    /**
+     * Function that returns the base href attribute
+     */
+    function documentBase(): string;
 
 }
 
