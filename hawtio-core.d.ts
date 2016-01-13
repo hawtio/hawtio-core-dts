@@ -73,6 +73,17 @@ declare module HawtioCore {
      */
     function documentBase(): string;
 
+    /**
+     * If angular2 is installed, this will be an instance of an ng.upgrade.UpgradeAdapter
+     */
+    var UpgradeAdapter:any;
+
+    /**
+     * This will be a reference to the value returned from UpgradeAdapter.bootstrap(),
+     * which contains the angular1 injector (As well as the angular2 root injector)
+     */
+    var UpgradeAdapterRef:any;
+
 }
 
 
