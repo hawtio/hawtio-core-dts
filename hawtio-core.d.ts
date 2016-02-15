@@ -49,6 +49,16 @@ declare module Hawtio {
      * Dumps the current list of configured modules and URLs to the console
      */
     debug();
+
+    /**
+     * Set the HTML element that the plugin loader will pass to angular.bootstrap
+     */
+    setBootstrapElement(el:HTMLElement):void;
+
+    /**
+     * Get the HTML element used for angular.bootstrap
+     */
+    getBootstrapElement():HTMLElement);
   }
 
 }
