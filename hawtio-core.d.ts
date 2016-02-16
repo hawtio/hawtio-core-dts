@@ -58,7 +58,7 @@ declare module Hawtio {
     /**
      * Get the HTML element used for angular.bootstrap
      */
-    getBootstrapElement():HTMLElement);
+    getBootstrapElement():HTMLElement;
   }
 
 }
