@@ -5,7 +5,7 @@ declare module Jolokia {
     type: string;
     mbean: string;
     operation?: string;
-    attribute?: string;
+    attribute?: string | string[];
     arguments?: Array<any>;
     path?:string;
     // TODO - In case I forgot something
@@ -101,8 +101,30 @@ declare module Jolokia {
     request(...args:any[]):any;
 
     // simple API
-    getAttribute(mbean:string, attribute:string, path?:string, opts?:IParams):any;
-    setAttribute(mbean:string, attribute:string, value: any, path?:string, opts?:IParams):any;
+    /**
+     * Get one or more attributes
+     *
+     * @param {string} mbean objectname of MBean to query. Can be a pattern.
+     * @param {string} attribute attribute name. If an array, multiple attributes are fetched.
+     *                           If <code>null</code>, all attributes are fetched.
+     * @param {string|IParams} path optional path within the return value. For multi-attribute fetch, the path
+     *                              is ignored.
+     * @param {IParams} opts options passed to Jolokia.request()
+     * @return {any} the value of the attribute, possibly a complex object
+     */
+    getAttribute(mbean:string, attribute:string, path?:string|IParams, opts?:IParams):any;
+    /**
+     * Set an attribute on a MBean.
+     *
+     * @param {string} mbean objectname of MBean to set
+     * @param {string} attribute the attribute to set
+     * @param {any} value the value to set
+     * @param {string|IParams} path an optional <em>inner path</em> which, when given, is used to determine
+     *                              an inner object to set the value on
+     * @param {IParams} opts additional options passed to Jolokia.request()
+     * @return {any} the previous value
+     */
+    setAttribute(mbean:string, attribute:string, value:any, path?:string|IParams, opts?:IParams):any;
 
     /**
      * executes an JMX operation, very last parameter can be an IParams
