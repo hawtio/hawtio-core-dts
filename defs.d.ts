@@ -1,7 +1,6 @@
 /// <reference path="logger.d.ts"/>
 /// <reference path="jquery.d.ts"/>
 /// <reference path="toastr.d.ts"/>
-/// <reference path="dynatree.d.ts"/>
 /// <reference path="angular.d.ts"/>
 /// <reference path="angular-resource.d.ts"/>
 /// <reference path="angular-route.d.ts"/>
