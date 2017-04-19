@@ -191,7 +191,7 @@ declare module 'angular' {
 
     namespace auto {
         interface IInjectorService {
-            get(name: '$resource'): ng.resource.IResourceService;
+            get(name: '$resource'): resource.IResourceService;
         }
     }
 }
