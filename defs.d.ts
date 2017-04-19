@@ -19,6 +19,3 @@
 
 /// <reference path="hawtio-core.d.ts"/>
 /// <reference path="hawtio-core-navigation.d.ts"/>
-
-declare var DTNodeStatus_Ok:any;
-
