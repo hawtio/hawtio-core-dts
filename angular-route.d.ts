@@ -121,14 +121,14 @@ declare module angular.route {
     interface ICurrentRoute extends IRoute {
         locals: {
             [index: string]: any;
-            $scope: IScope;
+            $scope: ng.IScope;
             $template: string;
         };
 
         params: any;
     }
 
-    interface IRouteProvider extends IServiceProvider {
+    interface IRouteProvider extends ng.IServiceProvider {
 		/**
          * Match routes without being case sensitive
          *
