@@ -16,6 +16,7 @@
 /// <reference path="marked.d.ts"/>
 /// <reference path="zeroclipboard.d.ts"/>
 /// <reference path="node.d.ts"/>
+/// <reference path="metricsWatcher.d.ts"/>
 
 /// <reference path="hawtio-core.d.ts"/>
 /// <reference path="hawtio-core-navigation.d.ts"/>
