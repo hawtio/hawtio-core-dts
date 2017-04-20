@@ -14,8 +14,8 @@ declare global {
     }
 }
 
-export as namespace angular;
 export as namespace ng;
+export as namespace angular;
 
 // Support AMD require
 export = angular;
