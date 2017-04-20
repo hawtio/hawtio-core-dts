@@ -6,7 +6,7 @@
 declare var _: string;
 export = _;
 
-import * as angular from 'angular';
+import * as angular from './angular';
 
 declare module 'angular' {
     ///////////////////////////////////////////////////////////////////////////////
@@ -171,8 +171,8 @@ declare module 'angular' {
 
         /** when creating a resource factory via IModule.factory */
         interface IResourceServiceFactoryFunction<T> {
-            ($resource: angular.resource.IResourceService): IResourceClass<T>;
-            <U extends IResourceClass<T>>($resource: angular.resource.IResourceService): U;
+            ($resource: resource.IResourceService): IResourceClass<T>;
+            <U extends IResourceClass<T>>($resource: resource.IResourceService): U;
         }
 
         // IResourceServiceProvider used to configure global settings
@@ -186,7 +186,7 @@ declare module 'angular' {
     /** extensions to base ng based on using angular-resource */
     interface IModule {
         /** creating a resource service factory */
-        factory(name: string, resourceServiceFactoryFunction: angular.resource.IResourceServiceFactoryFunction<any>): IModule;
+        factory(name: string, resourceServiceFactoryFunction: resource.IResourceServiceFactoryFunction<any>): IModule;
     }
 
     namespace auto {
