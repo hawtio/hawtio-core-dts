@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 
-declare module "graphlib" {
+declare module graphlib {
 	export interface GraphOptions {
 		directed?: boolean;  // default: true.
 		multigraph?: boolean;  // default: false.

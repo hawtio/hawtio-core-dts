@@ -3,8 +3,6 @@
 // Definitions by: Qinfeng Chen <https://github.com/qinfchen>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-import * as graphlib from 'graphlib';
-
 export as namespace dagre;
 
 export function layout(graph: graphlib.Graph): void;
