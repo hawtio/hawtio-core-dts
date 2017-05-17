@@ -3,20 +3,9 @@
 // Definitions by: Qinfeng Chen <https://github.com/qinfchen>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export as namespace dagre;
+import * as graphlib from 'graphlib';
 
-export namespace graphlib {
-    class Graph {
-        edges(): Edge[];
-        edge(id: any): any;
-        nodes(): string[];
-        node(id: any): any;
-        setDefaultEdgeLabel(callback: () => void): Graph;
-        setEdge(sourceId: string, targetId: string, options?: { [key: string]: any }): Graph;
-        setGraph(options: { [key: string]: any }): Graph;
-        setNode(id: string, node: { [key: string]: any }): Graph;
-    }
-}
+export as namespace dagre;
 
 export function layout(graph: graphlib.Graph): void;
 
