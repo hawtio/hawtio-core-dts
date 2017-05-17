@@ -357,19 +357,19 @@ declare module graphlib {
 		isCompound(): boolean;
 
 		/**
-		 * Sets the label of the graph.
+		 * Sets the graph object.
 		 * 
 		 * @argument label - label value.
 		 * @returns the graph, allowing this to be chained with other functions.
 		 */
-		setGraph(label: string): Graph;
+		setGraph(graph: any): Graph;
 
 		/**
 		 * Gets the graph label.
 		 * 
-		 * @returns currently assigned label for the graph or undefined if no label assigned.
+		 * @returns currently assigned graph object.
 		 */
-		graph(): void | string;
+		graph(): any;
 
 		/**
 		 * Gets the number of nodes in the graph.
