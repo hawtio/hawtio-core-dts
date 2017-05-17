@@ -10,6 +10,7 @@
 /// <reference path="URIjs.d.ts"/>
 /// <reference path="codemirror.d.ts"/>
 /// <reference path="codemirror-additional.d.ts"/>
+/// <reference path="graphlib.d.ts"/>
 /// <reference path="dagre.d.ts"/>
 /// <reference path="gridster.d.ts"/>
 /// <reference path="marked.d.ts"/>
