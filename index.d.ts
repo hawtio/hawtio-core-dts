@@ -7,5 +7,4 @@
 /// <reference path="graphlib.d.ts"/>
 /// <reference path="dagre.d.ts"/>
 /// <reference path="gridster.d.ts"/>
-/// <reference path="marked.d.ts"/>
 /// <reference path="metricsWatcher.d.ts"/>
