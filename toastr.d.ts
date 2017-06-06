@@ -3,9 +3,6 @@
 // Definitions by: Boris Yankov <https://github.com/borisyankov/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-
-/// <reference path="./jquery.d.ts" />
-
 interface ToastrOptions {
 	/**
 	* Optionally override the animation easing to show or hide the toasts. Default is swing. swing and linear are built into jQuery.

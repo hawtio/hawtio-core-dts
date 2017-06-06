@@ -1,4 +1,5 @@
-/// <reference path="jquery.d.ts"/>
+/// <reference types="jquery"/>
+
 declare module Jolokia {
 
   export interface IRequest {
