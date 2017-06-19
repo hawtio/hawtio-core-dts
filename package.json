@@ -1,6 +1,6 @@
 {
   "name": "@hawtio/core-dts",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "types": "./dist/index.d.ts",
   "description": "These are a collection of typescript definition files for the interfaces used in hawtio-core modules",
   "license": "Apache-2.0",
