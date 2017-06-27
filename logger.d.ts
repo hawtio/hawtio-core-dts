@@ -1,5 +1,3 @@
-
-
 declare var Logger:Logging.LoggerStatic;
 
 declare module Logging {
@@ -23,11 +21,20 @@ declare module Logging {
   export interface LoggerStatic extends Logger {
     useDefaults(level:LogLevel):void;
     get(name:string):Logger;
+    oldGet(name:string):Logger;
+    getType(obj:any):string;
+    isError(obj:any):boolean;
+    isArray(obj:any):boolean;
+    isObject(obj:any):boolean;
+    isString(obj:any):boolean;
     DEBUG:LogLevel;
     INFO:LogLevel;
     WARN:LogLevel;
     ERROR:LogLevel;
     OFF:LogLevel;
+    storagePrefix:string;
+    loggers:Object;
+
   }
 
 }
