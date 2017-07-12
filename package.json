@@ -3,16 +3,15 @@
   "version": "3.0.15",
   "types": "./dist/index.d.ts",
   "description": "These are a collection of typescript definition files for the interfaces used in hawtio-core modules",
-  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/jquery": "~2.0.46"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hawtio/hawtio-core-dts.git"
   },
-  "bugs": {
-    "url": "https://github.com/hawtio/hawtio-core-dts/issues"
-  },
-  "homepage": "https://github.com/hawtio/hawtio-core-dts#readme",
-  "dependencies": {
-    "@types/jquery": "^2.0.46"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
   }
 }
