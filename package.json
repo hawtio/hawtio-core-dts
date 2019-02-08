@@ -1,9 +1,9 @@
 {
   "name": "@hawtio/core-dts",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "These are a collection of typescript definition files for the interfaces used in hawtio-core modules",
   "dependencies": {
-    "@types/jquery": "~2.0.46"
+    "@types/angular": "*"
   },
   "repository": {
     "type": "git",
